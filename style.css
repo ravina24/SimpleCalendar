@@ -1,0 +1,39 @@
+#calender {
+  width: 500px;
+  height: 250px;
+  background-color: rgb(172, 146, 204);
+  /*color: #fff;*/
+/*  border-radius: 5%; */
+  box-shadow: 0 10px 10px 0 rgba(50, 50, 50, 0.4);
+  align-self: center;
+  position: relative;
+}
+
+#calender>p{
+  font-family: Arial;
+  margin: 0;
+  color: black;
+  outline: 2px solid black;
+  text-align: center;
+}
+
+#calenderDay{
+  font-size: 50px;
+}
+
+#calenderMonthYear{
+  font-size: 50px;
+  /* aligns to bottom-center*/
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+}
+
+#calenderDate{
+  font-size: 100px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  width: 100%;
+  position: absolute;
+}
