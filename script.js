@@ -12,10 +12,10 @@ var currentMonth = month[date.getMonth()];
 var currentYear = date.getYear() + 1900; // add 1900 because getYear gives us 118 instead of 2018
 
 // creates calender
-function makeCalender(){
-  setText("calenderDay", currentDay);
-  setText("calenderDate", currentDate);
-  setText("calenderMonthYear", currentMonth + " " + currentYear);
+function makeCalendar(){
+  setText("calendarDay", currentDay);
+  setText("calendarDate", currentDate);
+  setText("calendarMonthYear", currentMonth + " " + currentYear);
 };
 
 
@@ -27,8 +27,8 @@ function setText(id, val){
   document.getElementById(id).innerHTML = val;
 };
 
-// calls makeCalender function when page loads
-window.onload = makeCalender;
+// calls makeCalendar function when page loads
+window.onload = makeCalendar;
 
 // currently just opens the famousbirthdays webpage of today's date
 function celebBirthday(){
@@ -38,20 +38,24 @@ function celebBirthday(){
   window.open(url + birthday + ".html", "_blank");
 
 
-// below code SHOULD display name of most famous person whose birthday it is today?
-  // // gets famous birthdays page of current date
-  // $.get(url + birthday + ".html", function(response) {
-  //   console.log(response);
-  // });
-  //
-  // var name = $(response).find("name");
-  //
-  // setText("celebName", name);
+// //below code SHOULD display name of most famous person whose birthday it is today?
+//
+//   // gets all famous birthdays page of current date
+//   var url = "http://anyorigin.com/go?url=" + encodeURIComponent(realUrl) + birthday + ".html" + "&callback=?";
+//
+//   $.get(url, function(response) {
+//     console.log(response);
+//     // gets all names of famous people and chooses first name in array
+//     var names = response.getElementsByClassName("name");
+//     var firstName = names[0].textContent;
+//
+//     //displays name
+//     setText("celebName", firstName);
+//   });
 }
 
 // takes user to current date's wikipedia page
 function history() {
-  var url = "https://en.wikipedia.org/wiki/" + currentMonth + "_" + currentDate;
-  window.open(url, "_blank");
-
+   var url = "https://en.wikipedia.org/wiki/" + currentMonth + "_" + currentDate;
+   window.open(url, "_blank");
 }

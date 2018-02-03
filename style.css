@@ -1,4 +1,4 @@
-#calender {
+#calendar {
   width: 500px;
   height: 250px;
   background-color: rgb(172, 146, 204);
@@ -9,7 +9,7 @@
   position: relative;
 }
 
-#calender>p{
+#calendar>p{
   font-family: Times;
   margin: 0;
   color: black;
@@ -17,11 +17,11 @@
   text-align: center;
 }
 
-#calenderDay{
+#calendarDay{
   font-size: 50px;
 }
 
-#calenderMonthYear{
+#calendarMonthYear{
   font-size: 65px;
   /* aligns to bottom-center*/
   width: 100%;
@@ -31,7 +31,7 @@
 
 }
 
-#calenderDate{
+#calendarDate{
   font-size: 100px;
   padding-top: 0;
   padding-bottom: 0;
