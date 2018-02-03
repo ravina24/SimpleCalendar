@@ -49,7 +49,9 @@ function celebBirthday(){
   // setText("celebName", name);
 }
 
+// takes user to current date's wikipedia page
 function history() {
   var url = "https://en.wikipedia.org/wiki/" + currentMonth + "_" + currentDate;
   window.open(url, "_blank");
+
 }

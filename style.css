@@ -41,6 +41,8 @@
 .bDay {
   position: relative;
   padding-top: 30px;
+  font-size: 30px;
+  font-family: Times;
 }
 
 .bDay>p {
@@ -50,4 +52,6 @@
 
 .history {
   position: relative;
+  font-size: 30px;
+  font-family: Times;
 }
