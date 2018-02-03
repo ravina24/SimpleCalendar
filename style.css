@@ -4,13 +4,13 @@
   background-color: rgb(172, 146, 204);
   /*color: #fff;*/
 /*  border-radius: 5%; */
-  box-shadow: 0 10px 10px 0 rgba(50, 50, 50, 0.4);
+  box-shadow: 10px 10px 5px 5px;
   align-self: center;
   position: relative;
 }
 
 #calender>p{
-  font-family: Arial;
+  font-family: Times;
   margin: 0;
   color: black;
   outline: 2px solid black;
@@ -22,9 +22,10 @@
 }
 
 #calenderMonthYear{
-  font-size: 50px;
+  font-size: 65px;
   /* aligns to bottom-center*/
   width: 100%;
+  padding-top: 0;
   position: absolute;
   bottom: 0;
 
@@ -32,8 +33,21 @@
 
 #calenderDate{
   font-size: 100px;
-  padding-top: 10px;
+  padding-top: 0;
   padding-bottom: 0;
   width: 100%;
-  position: absolute;
+}
+
+.bDay {
+  position: relative;
+  padding-top: 30px;
+}
+
+.bDay>p {
+  font-family: Times;
+  font: 30px;
+}
+
+.history {
+  position: relative;
 }
